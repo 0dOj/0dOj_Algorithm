@@ -1,9 +1,6 @@
-import sys
-
-A, B = map(int, sys.stdin.readline().split())
-
-print(A + B)
-print(A - B)
-print(A * B)
-print(A // B)
-print(A % B)
+a, b = map(int, input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)

@@ -1,13 +1,6 @@
-import sys
-A, B, V = map(int, input().split())
+a, b, v = map(int, input().split())
+day = 1
 
-climb = A - B; goal = V - A;
-
-if V == A:
-    print("1")
-else:
-    if goal % climb == 0:
-        day = goal // climb
-    else:
-        day = goal // climb + 1
-    print(day + 1)
+v -= a
+day += v // (a-b) + min(1, v % (a-b))
+print(day)

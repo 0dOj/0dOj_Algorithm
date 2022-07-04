@@ -1,13 +1,12 @@
-import sys
-input = sys.stdin.readline
-cnt = {}
-for i in range(1, 10001):
-    cnt[i] = 0
+from sys import stdin
+input = stdin.readline
 
-N = int(input())
-for i in range(N):
-    cnt[int(input())] += 1
+n = int(input())
 
-for i in range(1, 10001):
-    for j in range(cnt[i]):
+arr = [0] * 10001
+for _ in range(n):
+    arr[int(input())] += 1
+
+for i in range(10001):
+    for _ in range(arr[i]):
         print(i)
