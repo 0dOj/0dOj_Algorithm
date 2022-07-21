@@ -1,19 +1,16 @@
-from collections import Counter
-import sys
-input = sys.stdin.readline
+from collections import defaultdict
 
-N = int(input())
-Ncards = list(map(int, input().split()))
-M = int(input())
-Mcards = list(map(int, input().split()))
+input()
+arr = map(int, input().split())
 
-cnt = dict(Counter(Ncards))
-ans = ""
+dic = defaultdict(int)
+for i in arr:
+    dic[i] += 1
 
-for i in range(M):
-    if Mcards[i] in cnt:
-        ans += str(cnt[Mcards[i]]) + " "
-    else:
-        ans += "0 "
+input()
+arr = map(int, input().split())
+ans = []
+for i in arr:
+    ans.append(dic[i])
 
-print(ans)
+print(*ans)
