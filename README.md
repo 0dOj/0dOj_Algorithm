@@ -16,4 +16,4 @@
 
 2022_07_23_ / solved.ac tier Platinum V
 
-            / 300 solve
+2022_07_23_ / 300 solve
