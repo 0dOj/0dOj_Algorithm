@@ -1,0 +1,1 @@
+for _ in range(int(input())):print('Gazua'if'1'in bin(int(input()))[3:]else'GoHanGang')
