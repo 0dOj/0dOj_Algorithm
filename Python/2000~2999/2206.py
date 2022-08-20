@@ -3,7 +3,7 @@ from collections import deque
 n, m = map(int, input().split())
 
 arr = [input() for _ in range(n)]
-visit = tuple(tuple((False) * m for _ in range(n)) for _ in range(2))
+visit = [[[False] * m for _ in range(n)] for _ in range(2)]
 visit[1][0][0] = True
 
 queue = deque([(0, 0, 1, 1)])
